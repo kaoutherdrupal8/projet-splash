@@ -1,0 +1,38 @@
+.feed-icon{
+	display:none;
+}
+
+
+
+
+/*******************************/
+/*                             */
+/*    gestion des boutons      */
+/*           debut             */
+/*                             */
+/*******************************/
+
+
+.uk-button-group{/* @toto @nono à vérifier que rien ne pète*/
+	margin-left: 30px;
+}
+
+a.uk-button:not(.uk-button-default) {
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+} 
+
+
+
+/*******************************/
+/*                             */
+/*    gestion des boutons      */
+/*            Fin              */
+/*                             */
+/*******************************/
+
+

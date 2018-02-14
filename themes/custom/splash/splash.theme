@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Conditional logic and data processing for splash.
+ */
+
+/**
+ * Load splash's include files for theme processing.
+ */
+include_once 'includes/preprocess.inc';
+include_once 'includes/process.inc';
+include_once 'includes/theme.inc';
+include_once 'includes/alter.inc';
+
+
+function splash_theme_suggestions_block_alter( array &$suggestions, array $variables ){
+	$nameView = "";
+
+	$viewId = isset(\Drupal::routeMatch()->getParameters()->all()['view_id']) ? \Drupal::routeMatch()->getParameters()->all()['view_id'] : false;
+	
+	$viewDisplayId = isset(\Drupal::routeMatch()->getParameters()->all()['display_id']) ? \Drupal::routeMatch()->getParameters()->all()['display_id'] : false;
+
+   $suggestions[] = 'block__'.$variables['elements']['#plugin_id'].'__'.$viewId;
+
+	 if ( $viewId === "activite" && $variables['elements']['#plugin_id'] === "system_main_block" ) {
+	 	if ( $viewDisplayId === "page_1") {//Vue aquatique
+	 		$nameView = "aquatique";
+	 	}
+	 	else if( $viewDisplayId === "page_2"){//Vue forme
+	 		$nameView = "forme";
+	 	}
+
+ 		$suggestions[] = 'block__'.$variables['elements']['#plugin_id'].'__'.$nameView;
+	 }
+
+}
+
+/*
+function splash_preprocess_html(&$variables) {
+  // Add node id to the body class.
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  if($node && !$isFrontpage) {
+    //$variables['path_info']['args'] =  'node-' . $node->id();
+    //$variables['path_info']['args'] =  'node-' . $node->getType();
+  }
+
+  $isFrontpage = \Drupal::service('path.matcher')->isFrontPage();
+
+  if ($isFrontpage) {
+    $variables['path_info']['args'] =  'frontpage';
+  }
+	/*kint($node->id());
+	kint($node->getEntityTypeId());
+	kint($node->getType());
+	die();*/

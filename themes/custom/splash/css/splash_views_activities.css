@@ -1,0 +1,273 @@
+.item-list ul{
+	list-style-type: none;
+}
+
+
+#page .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+	padding-right: 2px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 0px;
+    padding-right: 20px;
+    font-size: .999rem;
+    color: white;
+    font-style: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    text-decoration: none;
+}
+
+
+
+.uk-navbar-item {/* @toto @nono à vérifier que rien ne pète*/
+    margin-right: 2em;  
+}
+
+
+ #splash-content .views-row{
+ 	position: relative; 	
+ }
+
+
+
+/*******************************/
+/*                             */
+/*           Articles          */        
+/*                             */
+/*******************************/
+
+
+
+
+.tous-les-activites .uk-article, 
+.natation-adulte .uk-article,
+.natation-enfant.uk-article, 
+.aquagym-page .uk-article {
+    float: left;
+    border: 3px;
+    background-color: #F8F8FF; 
+    border-width:1; 
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    width: 48%;
+    margin-right:10px;
+    margin-bottom: 100px;
+}
+
+
+.first {
+    width: 400px;
+    height: 300px;
+    float: left;
+    padding: 0;
+}
+
+.second {
+	text-align: center;
+	padding-top: 8%; 
+	height: 287px;
+}
+
+.uk-text-lead,a{
+    color: #666;
+text-align: center;
+}
+
+
+.first h2{
+	margin:0;
+	padding:15px 10px;
+}
+
+.first h2 a{
+	color:white;
+}
+
+/* START STYLE BTN PAGE VIEWS */
+
+a.aquagym,
+.aquagym .first/* ,
+.aquagym .second */{
+	background-color: #d60c53;
+}
+
+a.natation-adulte,
+.natation-adulte .first/* ,
+.natation-adulte .second */{
+	background-color: #27358b;
+}
+
+a.natation-enfant,
+.natation-enfant .first/* ,
+.natation-enfant .second */{
+	background-color: #f29305;
+}
+
+
+a.renforcement-musculaire,
+.renforcement-musculaire .first/* ,
+.renforcement-musculaire .second */{
+	background-color: #e30615;
+}
+
+a.cardio-trainning,
+.cardio-trainning .first/* ,
+.cardio-trainning .second */{
+	background-color: #fcba21;
+}
+
+a.equilibre-et-souplesse,
+.equilibre-et-souplesse .first/* ,
+.equilibre-et-souplesse .second */{
+	background-color: #c3006b;
+}
+
+a.danse,
+.danse .first/* ,
+.danse .second */{
+	background-color: #95b53d;
+}
+
+a.aquagym{
+    background-color: #d60c53;
+    border: 2px solid #d60c53;
+}
+
+a.natation-adulte{
+    background-color: #27358b;
+    border: 2px solid #27358b;
+}
+
+a.natation-enfant{
+    background-color: #f29305;
+    border: 2px solid #f29305;
+}
+
+
+a.renforcement-musculaire{
+    background-color: #e30615;
+    border: 2px solid #e30615;
+}
+
+a.cardio-trainning{
+    background-color: #fcba21;
+    border: 2px solid #fcba21;
+}
+
+a.equilibre-et-souplesse{
+    background-color: #c3006b;
+    border: 2px solid #c3006b;
+}
+
+a.danse{
+    background-color: #95b53d;
+    border: 2px solid #95b53d;
+}
+
+.first{
+	border-width:0px;
+}
+
+a.uk-button:hover{
+  font-weight: normal!important;
+}
+
+a.aquagym:hover{
+	background-color: white;
+	color:#d60c53;
+}
+
+a.natation-adulte:hover{
+	background-color: white;
+	color:#27358b;
+}
+
+a.natation-enfant:hover{
+	background-color: white;
+	color:#f29305;
+}
+
+
+a.renforcement-musculaire:hover{
+	background-color: white;
+	color:#e30615;
+}
+
+a.cardio-trainning:hover{
+	background-color: white;
+	color:#fcba21;
+}
+
+a.equilibre-et-souplesse:hover{
+	background-color: white;
+	color:#c3006b;
+}
+
+a.danse:hover{
+	background-color: white;
+	color:#95b53d;
+}
+
+
+/* END STYLE BTN PAGE VIEWS */
+
+/*******************************/
+/*                             */
+/*           Articles          */
+/*           Page END          */
+/*                             */
+/*******************************/
+
+#views-block__nos-activites-aquatiques-block-1-2 .views-col, 
+#views-block__nos-activites-aquatiques-block-2-2 .views-col,
+#views-block__nos-activites-aquatiques-block-3-2 .views-col,
+#views-block__actualite-block-1-2 .views-col{
+    position: relative;
+    width:calc(25% - 25px)!important;
+    margin:0 10px;
+}
+#views-block__actualite-block-1-2 .views-col{
+    margin:0 4%;
+}
+
+#views-block__nos-activites-aquatiques-block-1-2 .views-field.views-field-title, 
+#views-block__nos-activites-aquatiques-block-2-2 .views-field.views-field-title,
+#views-block__nos-activites-aquatiques-block-3-2 .views-field.views-field-title,
+#views-block__actualite-block-1-2 .views-field.views-field-title{
+ font-size: 1em;
+ position: absolute;
+ left: calc(8% + 10px);
+ right: calc(8% + 10px);
+ bottom: 15px;
+ width: calc(73% - 20px);
+ text-align: center;
+ color: #666;
+ background-color: #fff ;
+ opacity: 0.6;
+ border-radius: 4px;
+ text-shadow: 0px 1px 0px black;
+ padding:8px 16px;
+
+}
+
+
+
+.actualities-page .field-content {
+    position: relative;
+    width: 98%;
+    margin-bottom: 20px;
+     margin-top: 20px;
+ 
+}

@@ -1,0 +1,18 @@
+global-style:
+  version: VERSION
+  css:
+    base:
+      css/splash.base.css: {}
+    layout:
+      css/splash.layout.css: {}
+    component:
+      css/splash.component.css: {}
+    theme:
+      css/splash.theme.css: {}
+      css/splash_general.css: {}
+      css/splash_header.css: {}
+      css/splash_footer.css: {}
+      css/splash_views_activities.css: {}
+      css/splash_activity.css: {}
+  # js:
+  #   js/splash.theme.js: {}

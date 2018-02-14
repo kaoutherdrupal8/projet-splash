@@ -1,0 +1,41 @@
+
+
+#page--header .uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: #3da7d1;
+    box-shadow: 0 0 20px #000; 
+}
+
+#page--header #splash-account-menu  {
+    margin-left: 3em;
+}
+
+
+.uk-navbar-container{/* @toto @nono à vérifier que rien ne pète*/
+	background-color-color: #3da7d1;
+}
+
+
+/*******************************/
+/*                             */
+/*            START            */
+/*            LOGO             */
+/*                             */
+/*******************************/
+.uk-logo {
+	font-size: 1.5rem;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: #fff;
+	text-decoration: none;
+	overflow: hidden;
+	width: 150px;
+	height: 100px;
+  padding-right: 40px;
+}
+
+/*******************************/
+/*                             */
+/*             END             */
+/*            LOGO             */
+/*                             */
+/*******************************/
+

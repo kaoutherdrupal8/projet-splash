@@ -1,0 +1,19 @@
+name: splash
+type: theme
+description: 'UIkit Sub-theme'
+core: 8.x
+base theme: uikit
+
+regions:
+  navbar: 'Navigation Bar'
+  offcanvas: 'Offcanvas Navigation'
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer: 'Footer'
+
+libraries:
+  - splash/global-style
